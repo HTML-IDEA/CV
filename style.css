@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color:#5b5b5b;
     background-color:#f7f7f7;
-    font-size:40px;
+     margin:auto;
 }
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
@@ -14,8 +14,7 @@ h2, h3 {
 h1 {
     font-weight: 700;
     color:#f7f7f7;
-    font-size:45px;
-}
+    }
 h2, h3 {
     font-weight:400;
 }
@@ -32,19 +31,20 @@ a:hover {
 ul li {
     list-style-type: none;
 }
-
+aside li {
+    list-style-type:circle;
+}
 /* Header */
 header a,header a:visited, header a:focus, header a:hover, header a:active {
     color:#f7f7f7;
     font-weight:bold;
-    font-size:45px;
 }
 header {
         background-color:#a74ac7; 
         padding:10px;
         display:flex;
-        flex-direction:row;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
 }
 header li {
     margin:10px;
@@ -62,7 +62,7 @@ main aside {
     justify-content: center;
 }
 aside img {
-    width:500px;
+    width:200px;
 }
 figcaption {
     text-align: center;
@@ -83,18 +83,77 @@ footer nav, footer div {
     text-align:center;
 }
 footer img {
-    width:50px;
+    width:25px;
     vertical-align: middle;
 }
 footer h2 {
     color:#3a3939;
 }
 
-/*responsive
-header {
-    background-color:#a74ac7; 
-    padding:10px;
-    position:sticky;
-    top:0;
-}
-*/
+/*responsive design */
+@media only screen and (min-width:900px) {
+    /* ajustements tailles */
+    body {
+        font-size:16px;
+    }
+    h1 {
+        font-size:30px;
+    }
+    header a {
+        font-size:20px;
+    }
+       
+    footer h2 {
+        font-size:16px;
+    }
+    /* disposition */
+    header {
+            background-color:#a74ac7; 
+            padding:10px;
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            position:sticky;
+            top:0; 
+            justify-content:space-between;
+    }
+    #intro {
+    display:flex;
+    }
+    #intro article {
+    align-self:center;
+    }
+    #experiences {
+    display:flex;
+    }
+    #experiences article {
+    margin:10px;
+    flex:2;
+    }
+    #experiences aside {
+        flex:1;
+    }
+    footer {
+        display:flex;
+        justify-content:space-between;
+    }
+    footer nav ul {
+        display:flex;
+    }
+    footer nav li {
+        margin:10px;
+    }
+    #mes_atouts {
+        margin:10px;
+    }
+    #liste_atouts {
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:20px;
+        grid-gap:20px;
+    }
+    #liste_atouts section {
+        text-align:center;
+        padding:10px;
+    }
+}   
