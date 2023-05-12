@@ -73,6 +73,13 @@ article {
 section p {
     text-align: justify;
 }
+#mes_atouts p {
+    text-align:center;
+}
+section li {
+    text-align:left;
+    list-style-type:circle;
+}
 /* Footer */
 footer {
     background-color:#c6c6c6;
@@ -145,6 +152,7 @@ footer h2 {
     }
     #mes_atouts {
         margin:10px;
+        padding:5px;
     }
     #liste_atouts {
         display:grid;
