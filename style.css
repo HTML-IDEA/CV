@@ -35,7 +35,7 @@ aside li {
     list-style-type:circle;
 }
 /* Header */
-header a,header a:visited, header a:focus, header a:hover, header a:active {
+.header-link, .header-link:visited, .header-link:focus, .header-link:hover, .header-link:active {
     color:#f7f7f7;
     font-weight:bold;
 }
@@ -62,7 +62,7 @@ main aside {
     justify-content: center;
 }
 aside img {
-    width:200px;
+    max-width:200px;
 }
 figcaption {
     text-align: center;
@@ -74,12 +74,24 @@ section p {
     text-align: justify;
 }
 #mes_atouts p {
-    text-align:center;
+    text-align:left;
 }
 section li {
     text-align:left;
     list-style-type:circle;
 }
+#liste_atouts section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin:5px;
+  }
+  .icon {
+     display: inline-block;
+     max-width:30px;
+    margin-right: 5px;
+  }
 /* Footer */
 footer {
     background-color:#c6c6c6;
@@ -90,7 +102,7 @@ footer nav, footer div {
     text-align:center;
 }
 footer img {
-    width:25px;
+    max-width:25px;
     vertical-align: middle;
 }
 footer h2 {
@@ -151,17 +163,12 @@ footer h2 {
         margin:10px;
     }
     #mes_atouts {
-        margin:10px;
         padding:5px;
     }
     #liste_atouts {
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:20px;
-        grid-gap:20px;
-    }
-    #liste_atouts section {
-        text-align:center;
-        padding:10px;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
 }   
