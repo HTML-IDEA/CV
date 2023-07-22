@@ -54,7 +54,7 @@ header ul {
 }
 
 
-/* Contenu */
+/* Contenu page de présentation */
 main aside {
     display:flex;
     flex-direction: row;
@@ -73,8 +73,13 @@ article {
 section p {
     text-align: justify;
 }
+
+/* Mes atouts */
+#mes_atouts {
+    margin:10px;
+}
 #mes_atouts p {
-    text-align:left;
+    text-align:center;
 }
 section li {
     text-align:left;
@@ -107,6 +112,16 @@ footer img {
 }
 footer h2 {
     color:#3a3939;
+}
+/* éléments de la page d'accueil */
+
+#accueil {
+    max-width:200px;
+    margin:auto;
+    display:block;
+}
+#bienvenue {
+    text-align:center;
 }
 
 /*responsive design */
@@ -171,4 +186,15 @@ footer h2 {
     gap: 20px;
     padding: 20px;
   }
+  #but {
+    display:flex;
+    margin:10px;
+    padding:5px;
+}
+#accueil {
+    max-width:350px;
+}
+#but fig {
+    order:1;
+}
 }   
